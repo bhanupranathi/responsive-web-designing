@@ -1,0 +1,41 @@
+.subdiv {
+
+  border: 1px solid black;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: aliceblue;
+  width: 30%;
+
+}
+.maindiv{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width:450px) {
+.maindiv{
+
+  display: flex;
+  flex-direction: column;
+
+}
+img{
+  width: 100px;
+}
+}
+media screen and (min-width:420px) and (max-width:760px){
+  .maindiv{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  img{
+    width: 50px;
+  }
+
+}
